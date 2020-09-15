@@ -22,10 +22,6 @@
     return Math.round(Math.abs(delta / oneDay));
   }
 
-  function handleButton() {
-    isModalOpen = true;
-  }
-
   function closeModal() {
     isModalOpen = false;
   }
@@ -196,13 +192,13 @@
 
                 <span class="xs-separetor" />
 
-                <button
-                  on:click={handleButton}
+                <a
+                  href="/donation/{charity.id}"
                   data-toggle="modal"
                   data-target="#exampleModal"
                   class="btn btn-primary btn-block">
                   Donate This Cause
-                </button>
+                </a>
               </div>
               <!-- .xs-item-content END -->
             </div>
